@@ -14,7 +14,7 @@ exports.service = (udp) => {
         console.log('등록된 사용자 : ', clients.length);
     });
     bot.onText(/\/stop/, (msg) => {
-        bot.sendMessage(msg.chat.id, "등록이 완료되었습니다.");
+        bot.sendMessage(msg.chat.id, "삭제 되었습니다.");
         clients.splice(msg.chat.id);
         console.log('등록된 사용자 : ', clients.length);
     });
